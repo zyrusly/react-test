@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import Header from './Header';
+
 
 const Test1 = () => {
     const[user, setUser] =  useState(null)
@@ -27,7 +27,6 @@ const Test1 = () => {
     
 return ( 
     <>
-        <Header user={user} setUser={setUser} handleClick={handleClick}/>
         {profile.firstname} &nbsp; {profile.lastname}
         <h1>{ num == 2 && welcome }</h1>
         <button onClick={() => handleClick('pedro')}>Click me Pedro </button>
@@ -46,6 +45,7 @@ return (
             </div>
             <div>
                 <input type="submit" value={'Submit'} />
+               
             </div>
         </form>
     </>
